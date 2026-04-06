@@ -1,0 +1,48 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Poppins',sans-serif; background:#fff; color:#333;}
+
+/* HEADER */
+header {text-align:center; padding:20px; background:#ffd1dc; border-bottom:3px solid #ffb6c1; position:relative; z-index:10;}
+header h1 {font-size:2.5em; color:#d63384;}
+header nav a {margin:0 15px; text-decoration:none; color:#555; font-weight:500; transition:0.3s;}
+header nav a:hover, header nav a.active {color:#d63384;}
+
+/* HERO */
+.hero {height:80vh; background:linear-gradient(135deg,#ffd1dc,#f0f8ff); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; animation:fadeIn 1.5s ease;}
+.hero h2 {font-size:2.2em; color:#d63384;}
+.hero p {margin:15px 0; font-size:1.2em;}
+.btn {padding:12px 25px; background:#d63384; color:white; border-radius:30px; text-decoration:none; transition:0.3s;}
+.btn:hover {background:#b0256b;}
+
+/* SECTIONS */
+.section {padding:70px 20px; text-align:center; animation:fadeIn 1.2s ease;}
+.section h2 {color:#d63384; margin-bottom:20px;}
+
+/* GRID PORTFÓLIO */
+.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+.card {position:relative; overflow:hidden; cursor:pointer; border-radius:15px;}
+.card img {width:100%; display:block; transition:0.4s;}
+.card:hover img {transform:scale(1.05); filter:brightness(0.8);}
+.overlay {position:absolute; bottom:10px; left:10px; color:white; background:rgba(214,51,132,0.8); padding:5px 10px; border-radius:10px; opacity:0; transition:0.3s;}
+.card:hover .overlay {opacity:1;}
+
+/* SERVICES */
+.services {background:#fff0f5;}
+.service-box {margin:20px auto; max-width:400px;}
+
+/* CONTACT */
+.contact {background:#f0f8ff;}
+
+/* FOOTER */
+footer {padding:20px; text-align:center; background:#ffd1dc; margin-top:40px;}
+
+/* LIGHTBOX */
+.lightbox {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; justify-content:center; align-items:center; z-index:20;}
+.lightbox img {max-width:90%; max-height:90%; border-radius:20px;}
+
+/* ANIMAÇÃO FADE IN */
+@keyframes fadeIn {from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);}}
+
+/* RESPONSIVO */
+@media(max-width:768px){header h1{font-size:2em;}}
+
